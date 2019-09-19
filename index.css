@@ -1,0 +1,283 @@
+/* GLOBAL STYLES */
+
+:root {
+  --mode-color-background: white;
+  --mode-color-foreground: black;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--mode-color-background, white);
+  color: var(--mode-color-foreground, black);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+input, select, button {
+  border: none;
+}
+
+.hide {
+  display: none;
+}
+
+/* HEADER STYLES */
+
+header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+#top-nav, #top-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#top-nav {
+  margin: 1.5em 3.5em;
+  font-family: "Roboto";
+  color: gray;
+}
+
+#top-nav h1 {
+  font-weight: bold;
+  font-size: 1.5em;
+  word-spacing: -2px;
+}
+
+#top-nav h1 .lighter {
+  font-weight: normal;
+}
+
+#top-nav ul li{
+  margin: 0 .75em;
+}
+
+#top-nav ul li:hover {
+  text-decoration: underline;
+  text-decoration-color: grey;
+  cursor: pointer;
+}
+
+/* MAIN GLOBAL STYLES */
+
+main {
+  width: calc(100vw - 7em);
+  min-width: 320px;
+  margin: 1.5em auto;
+}
+
+/* MAIN NAV STYLES */
+
+#main-nav, #main-nav-adjust, #main-nav-color-picker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-nav-adjust {
+  justify-content: space-between;
+  margin-left: 1.5em;
+}
+
+#main-nav {
+  border: 1px solid gray;
+  border-radius: 35px;
+  padding: .5em 2em;
+}
+
+#font-size {
+  flex-grow: 1;
+  font-family: "Roboto";
+}
+
+#search-fonts, #custom-text, #main-nav-adjust {
+  flex-grow: 3;
+  font-family: "Roboto";
+}
+
+#search-fonts, #custom-text {
+  border-right: 1px solid gray;
+  margin-right: .25em;
+}
+
+#main-nav-color-picker div {
+  height: 1em;
+  width: 1em;
+  border: 1px solid gray;
+  border-radius: 50%;
+  margin: 0 .25em;
+}
+
+#black {
+  background-color: black;
+}
+
+#white {
+  background-color: white;
+}
+
+#main-nav-adjust button {
+  margin: 0 .25em;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+input, button, select, i {
+  background-color: var(--mode-color-background, white);
+  color: var(--mode-color-foreground, black);
+}
+
+/* FONT CARD CONTAINER STYLES */
+
+#font-card-container {
+  margin: 1.5em 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* FONT CARD STYLES */
+
+:root {
+  --font-card-width: calc(25% - 3em);
+}
+
+.font-card {
+  height: 290px;
+  width: var(--font-card-width);
+  border-top: 1px solid var(--mode-color-foreground, black);
+  padding-top: .75em;
+  margin: 0 calc(12em / 8);
+  position: relative;
+  overflow: hidden;
+}
+
+.list {
+  width: 100% !important;
+}
+
+.font-card h2, .font-card-info p {
+  font-family: 'Roboto';
+  font-size: 1em;
+}
+
+.font-card-info p {
+  color: gray;
+  margin-top: .5em;
+}
+
+.font-card .add-font {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 2px solid red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  font-size: 1.25em;
+  cursor: pointer;
+}
+
+.font-card-sample {
+  padding-top: 2em;
+  font-size: 2em;
+}
+
+.font-card-sample p {
+  color: var(--mode-color-foreground, black);
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ASIDE BUTTON STYLES */
+
+#to-top {
+  font-size: 2em;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: .5;
+  display: none;
+}
+
+#to-top:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* FOOTER STYLES */
+
+footer {
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: .75em;
+  margin-bottom: 1em;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+  :root {
+    --font-card-width: calc(33% - 3em);
+  }
+}
+
+@media (max-width: 950px) {
+  :root {
+    --font-card-width: calc(50% - 3em);
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    --font-card-width: 100%;
+  }
+
+  #top-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #top-nav-ul {
+    font-size: .75em;
+    margin-top: .5em;
+  }
+
+  #top-nav ul li{
+    margin: 0 .75em 0 0;
+  }
+
+  #custom-text, #font-size, #main-nav-color-picker, #main-nav-layout, #main-nav-layout i {
+    display: none;
+  }
+
+  #search-fonts {
+    flex-grow: 3;
+  }
+
+  #main-nav-reset {
+    flex-grow: 1;
+  }
+
+  main {
+    width: calc(100vw - 2em);
+  }
+}

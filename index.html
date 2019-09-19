@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Google Fonts Clone</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka|Gayathri|Lato|Manjari|Montserrat|Open+Sans|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4d66f817b0.js"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+      <header>
+        <nav id="top-nav">
+          <h1>Google <span class="lighter">Fonts</span></h1>
+          <ul id="top-nav-ul">
+            <li>CATALOG</li>
+            <li>FEATURED</li>
+            <li>ARTICLES</li>
+            <li>ABOUT</li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <nav id="main-nav">
+          <input type="text" name="search-fonts" id="search-fonts" placeholder="Search fonts">
+          <input type="text" name="custom-text" id="custom-text" placeholder="Type something" oninput="changeSampleText(event)">
+          <select id="font-size" onchange="changeFontSize(event)">
+            <option value="20">20px</option>
+            <option value="24">24px</option>
+            <option value="32" id="selected-font-size" selected>32px</option>
+            <option value="40">40px</option>
+          </select>
+          <div id="main-nav-adjust">
+            <div id="main-nav-color-picker">
+                <div id="black" onclick="changeColorMode('black')"></div>
+                <div id="white" onclick="changeColorMode('white')"></div>
+            </div>
+            <button type="button" name="main-nav-layout" id="main-nav-layout">
+              <i class="fas fa-border-all hide" id="grid-icon" onclick="toggleView(false)"></i>
+              <i class="fas fa-list-ul" id="list-icon" onclick="toggleView(false)"></i>
+            </button>
+            <button type="button" name="main-nav-reset" id="main-nav-reset" onclick="resetPage()">
+              <i class="fas fa-redo"></i>
+            </button>
+          </div>
+        </nav>
+
+        <section id="font-card-container">
+          <div class="font-card">
+            <div class="font-card-info">
+              <h2>Roboto</h2>
+              <p>Christian Robertson</p>
+              <p class="add-font">+</p>
+            </div>
+            <div class="font-card-sample">
+              <p style="font-family:Roboto">Then came the night of the first falling star.</p>
+            </div>
+          </div>
+          <div class="font-card">
+            <div class="font-card-info">
+              <h2>Gayathri</h2>
+              <p>SMC</p>
+              <p class="add-font">+</p>
+            </div>
+            <div class="font-card-sample">
+              <p style="font-family:Gayathri">Then came the night of the first falling star.</p>
+            </div>
+          </div>
+          <div class="font-card">
+            <div class="font-card-info">
+              <h2>Chilanka</h2>
+              <p>SMC</p>
+              <p class="add-font">+</p>
+            </div>
+            <div class="font-card-sample">
+              <p style="font-family:Chilanka">Then came the night of the first falling star.</p>
+            </div>
+          </div>
+          <div class="font-card">
+            <div class="font-card-info">
+              <h2>Open Sans</h2>
+              <p>Steve Matteson</p>
+              <p class="add-font">+</p>
+            </div>
+            <div class="font-card-sample">
+              <p style="font-family:Open Sans">Then came the night of the first falling star.</p>
+            </div>
+          </div>
+          <div class="font-card">
+            <div class="font-card-info">
+              <h2>Lato</h2>
+              <p>Lukasz Dziedzic</p>
+              <p class="add-font">+</p>
+            </div>
+            <div class="font-card-sample">
+              <p style="font-family:Lato">Then came the night of the first falling star.</p>
+            </div>
+          </div>
+          <div class="font-card">
+            <div class="font-card-info">
+              <h2>Manjari</h2>
+              <p>Santhosh Thottingal</p>
+              <p class="add-font">+</p>
+            </div>
+            <div class="font-card-sample">
+              <p style="font-family:Manjari">Then came the night of the first falling star.</p>
+            </div>
+          </div>
+          <div class="font-card">
+            <div class="font-card-info">
+              <h2>Montserrat</h2>
+              <p>Julieta Ulanovsky</p>
+              <p class="add-font">+</p>
+            </div>
+            <div class="font-card-sample">
+              <p style="font-family:Montserrat">Then came the night of the first falling star.</p>
+            </div>
+          </div>
+          <div class="font-card">
+            <div class="font-card-info">
+              <h2>Roboto Condensed</h2>
+              <p>Christian Robertson</p>
+              <p class="add-font">+</p>
+            </div>
+            <div class="font-card-sample">
+              <p style="font-family:Roboto Condensed">Then came the night of the first falling star.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside id="to-top">
+        <div>
+          <i class="fas fa-arrow-circle-up" onclick="scrollToTop()"></i>
+        </div>
+      </aside>
+
+      <footer>
+        <p>coded by jmwebDev | 2019 | Chingu Pre-Work Project</p>
+      </footer>
+    
+    <script src="index.js" async defer></script>
+  </body>
+</html>
