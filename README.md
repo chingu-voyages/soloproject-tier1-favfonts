@@ -6,13 +6,13 @@
 
 This project is a great opportunity to develop a clean and modern webpage. The *Favorite Fonts* app will be completed accross tiers, with each tier adding a level of complexity. You are currently on the *Tier 1* repo. You'll be responsible for coding the **HTML**, **CSS**, and **JavaScript** to get the structure, styling, and some functionality up and running.
 
-As you add skills to your developer toolbag you'll be able to come back to this project and add in the Tier 2 and Tier 3 features. Ultimately you'll have a great portfolio piece, and will have implement a number of common and in-demand features.
+As you add skills to your developer toolbag you'll be able to come back to this project and add in the Tier 2 and Tier 3 features. Ultimately you'll have a great portfolio piece, and will have implemented a number of common and in-demand features.
 
 **No frameworks are allowed in this Tier, and no frameworks were used in the creation of the Tier 1 / Tier 2 / Tier 3 versions of the application's front-end.**
 
 ## Instructions ##
 
-Remember, this project must be completed with **vanilla** (plain) HTML, CSS, and JavaScript. Do not user front-end frameworks or libraries *(including JQuery and Bootstrap)*.
+Remember, this project must be completed with **vanilla** (plain) HTML, CSS, and JavaScript. Do not use front-end frameworks or libraries *(including JQuery and Bootstrap)*.
 
 General instructions for all Pre-Work Projects can also be found in the Chingu Voyage Handbook (URL posted in the #read-me-first channel on Discord).
 
@@ -45,6 +45,5 @@ General instructions for all Pre-Work Projects can also be found in the Chingu V
 
 ## Example ##
 
-Here is a gif from the project website. The functionality shown includes the extra (not required) elements listed above.
-
+*The functionality shown includes the extra (not required) elements listed above.*
 ![Tier 1 Gif](./assets/tier1Preview.gif)
