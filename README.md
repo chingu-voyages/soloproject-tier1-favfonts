@@ -8,7 +8,7 @@ This project is a great opportunity to develop a clean and modern webpage. The *
 
 As you add skills to your developer toolbag you'll be able to come back to this project and add in the Tier 2 and Tier 3 features. Ultimately you'll have a great portfolio piece, and will have implemented a number of common and in-demand features.
 
-**No Frameworks or Libraries May Be Used In This Tier**
+**No Frameworks, Libraries, or Code Generators May Be Used In This Tier**
 
 ## Instructions ##
 
