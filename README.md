@@ -36,6 +36,10 @@ General instructions for all Pre-Work Projects can also be found in the Chingu V
 - [ ] Font size chooser should have at least four sizes and should immediately change the sample text font size in each font card
 - [ ] Implement the clickable 'reset' icon on the far right of the major navigation; it should make the page appear as if the user reloaded the page *(do not actually reload the page)*
 
+*Other*
+- [ ] Your repo needs to have a robust README.md
+- [ ] Make sure that there are no errors in the developer console before submitting
+
 **Extras (Not Required)**
 
 - [ ] Include a back-to-top button that allows users to scroll to the top once the top of the page is out of view
