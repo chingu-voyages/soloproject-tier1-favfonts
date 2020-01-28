@@ -14,6 +14,9 @@ As you add skills to your developer toolbag you'll be able to come back to this 
 
 Remember, this project must be completed with **vanilla** (plain) HTML, CSS, and JavaScript. Do not use front-end frameworks or libraries *(JQuery, Bootstrap, etc.)*.
 
+As a Tier 1 project there is no need to use the [Google Fonts API](https://developers.google.com/fonts) to retrieve font information. Instead, you may select and hardcode 
+information for 10 or more fonts to display in your app.
+
 General instructions for all Pre-Work Projects can also be found in the Chingu Voyage Handbook (URL posted in the #read-me-first channel on Discord).
 
 **Requirements**
