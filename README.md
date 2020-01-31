@@ -1,4 +1,4 @@
-# Chingu Voyage Pre-Work Solo Project (Tier 1): *Favorite Fonts* #
+# Chingu Solo Project - Tier 1 - Favorite Fonts
 
 ![Landing Page ScreenShot](./assets/favoriteFontsLanding.png)
 
