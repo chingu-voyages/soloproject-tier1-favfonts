@@ -17,6 +17,8 @@ Remember, this project must be completed with **vanilla** (plain) HTML, CSS, and
 As a Tier 1 project there is no need to use the [Google Fonts API](https://developers.google.com/fonts) to retrieve font information. Instead, you may select and hardcode 
 information for 10 or more fonts to display in your app.
 
+Even though the font creator is shown in the gif there is no requirement that you include it since it's not available in the Google API.
+
 General instructions for all Pre-Work Projects can also be found in the Chingu Voyage Handbook (URL posted in the #read-me-first channel on Discord).
 
 **Requirements**
@@ -25,7 +27,7 @@ General instructions for all Pre-Work Projects can also be found in the Chingu V
 - [ ] Header with minor navigation *(Logo and Catalog/Featured/Articles/About link list)*
 - [ ] Nav with Major navigation / page-manipulation *(search, custom text, font-size, dark/light mode, grid/list mode, and reset)*
 - [ ] Main section to contain the font cards
-- [ ] Font cards which display the Font Name, the font creator, the sample text, and an add button
+- [ ] Font cards which display the Font Name, the sample text, and an add button
 - [ ] Footer section with your developer information
 
 *Style*
